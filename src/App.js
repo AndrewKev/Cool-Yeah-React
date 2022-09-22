@@ -2,6 +2,7 @@ import './style/output.css';
 // import Navbar from './components/Navbar';
 import HomeContent  from './pages/HomeContent';
 import About from './pages/About';
+import Sertif from './pages/Sertif';
 import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomeContent />} />
           <Route path='/about' element={<About />} />
+          <Route path='/sertif' element={<Sertif />} />
         </Routes>
       </Fragment>
     </Router>
