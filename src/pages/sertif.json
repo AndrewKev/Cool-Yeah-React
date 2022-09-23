@@ -1,0 +1,36 @@
+{
+  "sertif": [
+    {
+      "name": "aws",
+      "url": "https://i.ibb.co/1G9md8G/aws.jpg"
+    },
+    {
+      "name": "aws2",
+      "url": "https://i.ibb.co/jT7wW8v/aws2.jpg"
+    },
+    {
+      "name": "baparekraf",
+      "url": "https://i.ibb.co/jD88xhp/baparekraf.jpg"
+    },
+    {
+      "name": "c",
+      "url": "https://i.ibb.co/PC3wnb3/c.jpg"
+    },
+    {
+      "name": "dev-ops",
+      "url": "https://i.ibb.co/Rh3Gbvg/dev-ops.jpg"
+    },
+    {
+      "name": "jaringan",
+      "url": "https://i.ibb.co/xHrHZ8T/jaringan.jpg"
+    },
+    {
+      "name": "solid",
+      "url": "https://i.ibb.co/fCvjbyJ/solid.jpg"
+    },
+    {
+      "name": "webinar-webdedv",
+      "url": "https://i.ibb.co/TM899f8/webinar-webdedv.jpg"
+    }
+  ]
+}

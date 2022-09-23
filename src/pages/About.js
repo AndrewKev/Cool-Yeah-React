@@ -1,39 +1,86 @@
 import React, { Component, Fragment } from "react";
+
+// css
 import '../style/output.css';
+
+// image
 import pp from '../image/Ellipse1.png';
+
+// course component
 import Dicoding from "../components/aboutComponent/Dicoding";
+import Progate from "../components/aboutComponent/Progate";
+import Skill from "../components/aboutComponent/Skill";
 
 class About extends Component {
   render() {
     const dicodingList = [
-      { 
+      {
         title: 'Belajar Prinsip Pemrograman SOLID'
       },
-      { 
+      {
         title: 'Memulai Pemrograman Dengan Java'
       },
-      { 
+      {
         title: 'Memulai Pemrograman Dengan C'
       },
-      { 
+      {
         title: 'Belajar Dasar Pemrograman Web'
       },
-      { 
+      {
         title: 'Belajar Dasar Pemrograman JavaScript'
       },
-      { 
+      {
         title: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)'
       },
-      { 
+      {
         title: 'Architecting on AWS (Membangun Arsitektur Cloud di AWS)'
       },
-      { 
+      {
         title: 'Belajar Dasar-Dasar DevOps'
       },
-      { 
+      {
         title: 'Belajar Jaringan Komputer untuk Pemula'
       },
     ];
+
+    const progateList = [
+      {
+        title: 'HTML & CSS'
+      },
+      {
+        title: 'JavaScript'
+      },
+      {
+        title: 'React'
+      }
+    ]
+
+    const skills = [
+      {
+        name: 'HTML'
+      },
+      {
+        name: 'CSS'
+      },
+      {
+        name: 'JavaScript'
+      },
+      {
+        name: 'Java'
+      },
+      {
+        name: 'SQL'
+      },
+      {
+        name: 'Bootstrap'
+      },
+      {
+        name: 'Tailwind'
+      },
+      {
+        name: 'React'
+      }
+    ]
 
     return (
       <Fragment>
@@ -62,14 +109,11 @@ class About extends Component {
             <div>
               <h1 className="font-bold text-2xl mt-12">Skills</h1>
               <ul className="list-disc ml-6">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>SQL</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>React</li>
+                {skills.map((skill) => {
+                  return (
+                    <li><Skill title={skill.name} /></li>
+                  )
+                })}
               </ul>
             </div>
           </div>
@@ -80,23 +124,21 @@ class About extends Component {
               <div>
                 <h2 className="text-xl">Dicoding Academy</h2>
                 <ul className="list-disc ml-6">
-                  <li><Dicoding title="Belajar Prinsip Pemrograman SOLID" /></li>
-                  <li>Memulai Pemrograman Dengan Java</li>
-                  <li>Memulai Pemrograman Dengan C</li>
-                  <li>Belajar Dasar Pemrograman Web</li>
-                  <li>Belajar Dasar Pemrograman JavaScript</li>
-                  <li>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</li>
-                  <li>Architecting on AWS (Membangun Arsitektur Cloud di AWS)</li>
-                  <li>Belajar Dasar-Dasar DevOps</li>
-                  <li>Belajar Jaringan Komputer untuk Pemula</li>
+                  {dicodingList.map((dList) => {
+                    return (
+                      <li><Dicoding title={dList.title} /></li>
+                    )
+                  })}
                 </ul>
               </div>
               <div>
                 <h2 className="text-xl">Progate</h2>
                 <ul className="list-disc ml-6">
-                  <li>HTML & CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
+                  {progateList.map((pList) => {
+                    return (
+                      <li><Progate title={pList.title} /></li>
+                    )
+                  })}
                 </ul>
               </div>
             </div>

@@ -1,3 +1,17 @@
+# Created By
+=> Andreas Kevin Maheswara
+=> 205314027
+
+## Panduan
+1. Install NodeJS dan NPM
+2. Lakukan 'npm install'
+3. Jalankan react dengan 'npm start'
+4. Klik link yang muncul di terminal
+
+
+#
+# ReadMe dari React #
+#
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

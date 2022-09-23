@@ -1,9 +1,9 @@
 import React from "react";
 
-const Progate = (props) => {
+const Skill = (props) => {
   return(
     <p>{props.title}</p>
   )
 }
 
-export default Progate;
+export default Skill;

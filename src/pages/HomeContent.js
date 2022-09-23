@@ -1,4 +1,9 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
+
+// image
+import kevin from '../image/kevin.png'
+
 // import Sosmed from "../components/Sosmed";
 
 
@@ -19,9 +24,11 @@ class HomeContent extends React.Component {
             <h1 className="font-bold text-[32px] text-blue-donk">Andreas Kevin Maheswara</h1>
             <p className="w-[19rem] text-xl text-blue-donk">Mahasiswa, Web Desainer, Programmer, Yogyakarta, Indonesia</p>
 
-            <button
-              className="mb-16 mt-14 bg-[#E23E57] py-[10px] px-[31px] text-white font-bold rounded-tl-xl rounded-br-xl rounded-bl-sm rounded-tr-sm hover:bg-[#06283D]">Read
-              More</button>
+            <Link to="/about">
+              <button
+                className="mb-16 mt-14 bg-[#E23E57] py-[10px] px-[31px] text-white font-bold rounded-tl-xl rounded-br-xl rounded-bl-sm rounded-tr-sm hover:bg-[#06283D]">Read
+                More</button>
+            </Link>
             <div className="flex">
               {/* <Sosmed />
               <Sosmed />
@@ -57,7 +64,7 @@ class HomeContent extends React.Component {
 
           </div>
           <div>
-            {/* <img src="./images/e8e38bb1-d837-4e88-b6dd-10c819e101c0-removebg-preview 1.png" alt=""> */}
+            <img src={kevin} alt="" />
           </div>
         </div>
       </Fragment>
