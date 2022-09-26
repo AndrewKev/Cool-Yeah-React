@@ -1,6 +1,6 @@
 # Created By
-=> Andreas Kevin Maheswara
-=> 205314027
+1. Nama => Andreas Kevin Maheswara
+2. NIM  => 205314027
 
 ## Panduan
 1. Install NodeJS dan NPM
@@ -10,8 +10,7 @@
 
 
 #
-# ReadMe dari React #
-#
+# ReadMe dari React
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
